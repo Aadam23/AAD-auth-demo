@@ -23,6 +23,7 @@ This project verifies Azure AD authentication by simulating user login, capturin
 
 
 ### 3. Decoded Token in jwt.ms
+<img width="1440" alt="Screenshot 2025-07-03 at 5 17 57 PM" src="https://github.com/user-attachments/assets/0983d6d2-2da5-41d1-9753-c2ae93162df5" />
 
 
 

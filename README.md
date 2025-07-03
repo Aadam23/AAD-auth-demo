@@ -15,13 +15,16 @@ This project verifies Azure AD authentication by simulating user login, capturin
 
 
 ### 1. Azure AD Sign-In Prompt
-![Admin Approval](screenshots/azure-admin-approval.png)
+<img width="1440" alt="Screenshot 2025-07-03 at 1 29 23 PM" src="https://github.com/user-attachments/assets/e73ccb01-f61c-42f6-8add-392623d82644" />
+
 
 ### 2. Token Returned in Redirect URI
-![Token in Localhost](screenshots/localhost-token-url.png)
+<img width="1440" alt="Screenshot 2025-07-03 at 1 40 35 PM" src="https://github.com/user-attachments/assets/7e0ba27e-a257-4534-a279-8b80971e5005" />
+
 
 ### 3. Decoded Token in jwt.ms
-![Decoded JWT](screenshots/jwtms-token-decoded.png)
+<img width="1440" alt="Screenshot 2025-07-03 at 1 49 37 PM" src="https://github.com/user-attachments/assets/9d9117a8-1105-416a-b3b4-6f5fff104560" />
+
 
 ---
 

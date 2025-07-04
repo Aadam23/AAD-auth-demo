@@ -1,15 +1,22 @@
 # AAD-auth-demo
 Azure Active Directory / Entra ID
 
-This project verifies Azure AD authentication by simulating user login, capturing the redirect with an ID token, and manually decoding the token using jwt.ms. It serves as a frontend-only proof-of-concept to confirm that AAD login and token issuance work as expected.
+This project demonstrates how to test Azure Active Directory (AAD) authentication using a test user account and verify the returned ID token using `jwt.ms`.
 
 ---
 
-## 🔐 Features
-- Login with Azure AD test user (testuser01)
-- Redirect URI token parsing
-- Manual token validation and decoding
-- JWT inspection via `jwt.ms`
+## 🎯 Goal
+
+To simulate an AAD login flow, capture the returned ID token via redirect URI, and decode the JWT token for inspection—**without building a full-stack or production application**.
+
+---
+
+## 🔐 What This Project Does
+
+- Initiates login for a test AAD user (`testuser01`)
+- Captures ID token via the `localhost:3000` redirect
+- Manually extracts the token from the URL
+- Decodes and validates token claims at [jwt.ms](https://jwt.ms)
 
 ---
 
@@ -29,14 +36,15 @@ This project verifies Azure AD authentication by simulating user login, capturin
 
 ---
 
-## ⚙️ Tech Stack
-- HTML / JavaScript (msal.js)
-- Azure Active Directory
-- jwt.ms for token decoding
-- Safari for testing incognito auth flow
+## 🧠 What You Learn from This
+
+- Basics of Azure AD authentication flows
+- How ID tokens are returned and structured
+- How to decode and inspect JWT tokens
+- How AAD enforces app permission and consent policies
 
 ---
 
-## 📝 Notes
-- This project uses a test Azure tenant with restricted permissions.
-- Admin consent is required for apps requesting directory-level scopes.
+## 📝 Note
+
+This is not a full-stack app. There is **no backend server** or persistent data storage. It is purely a test of the login and token flow with AAD.
